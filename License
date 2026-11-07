@@ -1,0 +1,13 @@
+{
+  "format": 1,
+  "issued": "2026-11-07T18:59:30Z",
+  "entries": [
+    {
+      "id": "Q01XDG4B-4VQVC99M-KAXZ54RA",
+      "from": "2026-11-08",
+      "to": "2027-05-30",
+      "plan": "Thử nghiệm"
+    }
+  ],
+  "sig": "a2d33o2nwsj9Ggs+SbmHd2A2ACwbbfizCbDtkLN3drwVC06ibELcOdn7eYla7K3PX5X4tH2o/at4k7Gyf6Xzow=="
+}
