@@ -1,5 +1,8 @@
-[ver]1.0[/ver]
+[ver]1.0.1[/ver]
 [date]08.11.2026[/date]
 [info]
 08.11.2026: phát hành phiên bản đầu tiên của TKTool, tool đã hỗ trợ đầy đủ các tính năng cần thiết và nâng cao để thiết kế tuyến đường hoàn chỉnh. Thử nghiệm, chưa thu phí
 [/info]
+[url]https://raw.githubusercontent.com/thinhba/TKTool/main/Releases/TkTool_V1.0.1.exe[/url]
+[sha256]6b6f5d80653cc0c13e0aa6d23b1d37274e34b680470c8027c746d9d664342975[/sha256]
+[sig]GXgX3KXA/58pP+zk+rD/qFFPTrGOmNY/GR0Z06l/sVWxytlXKT+4gFroe9ZV41ViBPA07J7taMWVsTQQLvz4Iw==[/sig]
