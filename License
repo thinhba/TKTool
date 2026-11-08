@@ -1,13 +1,13 @@
 {
   "format": 1,
-  "issued": "2026-11-08T14:12:16Z",
+  "issued": "2026-11-08T14:12:41Z",
   "entries": [
     {
       "id": "*",
       "from": "2026-11-08",
-      "to": "2026-12-08",
+      "to": "2026-12-31",
       "plan": "Thử nghiệm"
     }
   ],
-  "sig": "S5JCGnTURXKDtRCIrjKU37ZSl7lnTP8dZmy8WY8hNZdCyDcZLJWPMZ5uLCPCyb2yu1q1lQaXR5yWSmK8RRgdrQ=="
+  "sig": "w1TUBpJ5ie3nPw/Y2KOM4eY6MU02lfWTKaKs9nSamriJ1Voo9a8kRxDH2bxQZvRJQbTVJXXuLsKADAjja1GKAg=="
 }
