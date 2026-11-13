@@ -1,10 +1,11 @@
-[ver]1.0.3[/ver]
+[ver]1.0.4[/ver]
 [date]13.11.2026[/date]
 [info]
+13.11.2026: thêm tính năng biên tập file NTD và phun điểm từ file TXT lên bình đồ. Sửa lỗi nhận sai định dạng file NTD. Chỉnh sửa tính năng MSS và điền độ dốc trắc dọc.
 13.11.2026: sửa lỗi xuất NTD phần mềm khác không đọc được, sửa lỗi xuất KMZ bị lỗi font chữ.
 12.11.2026: thêm tính năng San nền, chỉnh sửa lỗi tính năng tạo file NTD từ bản vẽ trắc dọc - trắc ngang
 08.11.2026: phát hành phiên bản đầu tiên của TKTool, tool đã hỗ trợ đầy đủ các tính năng cần thiết và nâng cao để thiết kế tuyến đường hoàn chỉnh. Thử nghiệm, chưa thu phí
 [/info]
-[url]https://raw.githubusercontent.com/thinhba/TKTool/main/Releases/TkTool_V1.0.3.exe[/url]
-[sha256]f195761afccf4af34516097eaabba80fa1ee7c931b5b9967074c4912b65b091a[/sha256]
-[sig]Tn0sfWVyCeNesnAZiZvxYU8zWDXkHVang7te/JLaNsWZNXel+TG2VC6yX4/ANb+38y5xbr4b21zAWhdpkajKpA==[/sig]
+[url]https://raw.githubusercontent.com/thinhba/TKTool/main/Releases/TkTool_V1.0.4.exe[/url]
+[sha256]67bda3e469b46b40ef3c68eecc4adcc187f339a2be12e9bed120223f58602de7[/sha256]
+[sig]07y8fMAuieZ1P+oPsfNExNRit473LACQrhFkK/SFb51FQtkOSY++/4jpoJbS9hX6fqiGGaf/z+4CSv5WlJ9hlQ==[/sig]
