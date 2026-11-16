@@ -1,12 +1,13 @@
-[ver]1.0.5[/ver]
+[ver]1.0.6[/ver]
 [date]16.11.2026[/date]
 [info]
+16.11.2026: cập nhật giao diện chính, cho phép tắt mở tool khi khởi động.
 16.11.2026: cập nhật tính năng Thoát nước mưa, bổ sung hướng dẫn thiết kế trắc ngang bằng hoạt ảnh, thêm Menu dạng sơ đồ cây, cập nhật biên tập NTD từ file mới, sửa lỗi bug văng Autocad
 13.11.2026: thêm tính năng biên tập file NTD và phun điểm từ file TXT lên bình đồ. Sửa lỗi nhận sai định dạng file NTD. Chỉnh sửa tính năng MSS và điền độ dốc trắc dọc.
 13.11.2026: sửa lỗi xuất NTD phần mềm khác không đọc được, sửa lỗi xuất KMZ bị lỗi font chữ.
 12.11.2026: thêm tính năng San nền, chỉnh sửa lỗi tính năng tạo file NTD từ bản vẽ trắc dọc - trắc ngang
 08.11.2026: phát hành phiên bản đầu tiên của TKTool, tool đã hỗ trợ đầy đủ các tính năng cần thiết và nâng cao để thiết kế tuyến đường hoàn chỉnh. Thử nghiệm, chưa thu phí
 [/info]
-[url]https://raw.githubusercontent.com/thinhba/TKTool/main/Releases/TkTool_V1.0.5.exe[/url]
-[sha256]c864226426a75cf995be7ee1e8064efd6f338401908d387cbdeafc54e0d8d5eb[/sha256]
-[sig]0jowoXLh/dxV5cJwK6mdlg2cZeUfbSBsFiidOEBf6z8+zuhKO91kXFBlr1ZLJkSs/M8hFveN5Yia5n8B6mQCIQ==[/sig]
+[url]https://raw.githubusercontent.com/thinhba/TKTool/main/Releases/TkTool_V1.0.6.exe[/url]
+[sha256]7a2a1fc12055976f59b9c51c8f132a86edaa8f9c033d8fa63dcf85e3c63d0e3a[/sha256]
+[sig]Cfj6zHuRe2rADSnfMp/CVWG2ulBKYngdyoQhGHKlG9Enht48359ojd3FSyojXodjqTYWnF187CNY+R/R3bIvSw==[/sig]
