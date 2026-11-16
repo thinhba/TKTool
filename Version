@@ -1,8 +1,10 @@
 [ver]1.0.6[/ver]
 [date]16.11.2026[/date]
 [info]
-16.11.2026: cập nhật giao diện chính, cho phép tắt mở tool khi khởi động.
-16.11.2026: cập nhật tính năng Thoát nước mưa, bổ sung hướng dẫn thiết kế trắc ngang bằng hoạt ảnh, thêm Menu dạng sơ đồ cây, cập nhật biên tập NTD từ file mới, sửa lỗi bug văng Autocad
+16.11.2026: v1.0.6
+- Tính năng mới: cập nhật tính năng Thoát nước mưa, bổ sung hướng dẫn thiết kế trắc ngang bằng hoạt ảnh, cập nhật biên tập NTD. Thêm Menu dạng sơ đồ cây (tab Cài đặt), cho phép đóng mở tool khi khởi động.
+- Giao diện: làm mới thanh tab chính: biểu tượng, nhãn dễ đọc, màu riêng cho từng phân hệ, rê chuột xem tên đầy đủ
+- Sửa lỗi: tắt “Mở TkTool khi khởi động” nhưng bảng vẫn tự mở, lỗi chết cad khi khởi động lần đầu.
 13.11.2026: thêm tính năng biên tập file NTD và phun điểm từ file TXT lên bình đồ. Sửa lỗi nhận sai định dạng file NTD. Chỉnh sửa tính năng MSS và điền độ dốc trắc dọc.
 13.11.2026: sửa lỗi xuất NTD phần mềm khác không đọc được, sửa lỗi xuất KMZ bị lỗi font chữ.
 12.11.2026: thêm tính năng San nền, chỉnh sửa lỗi tính năng tạo file NTD từ bản vẽ trắc dọc - trắc ngang
@@ -10,4 +12,4 @@
 [/info]
 [url]https://raw.githubusercontent.com/thinhba/TKTool/main/Releases/TkTool_V1.0.6.exe[/url]
 [sha256]7a2a1fc12055976f59b9c51c8f132a86edaa8f9c033d8fa63dcf85e3c63d0e3a[/sha256]
-[sig]Cfj6zHuRe2rADSnfMp/CVWG2ulBKYngdyoQhGHKlG9Enht48359ojd3FSyojXodjqTYWnF187CNY+R/R3bIvSw==[/sig]
+[sig]vfmWsELCYBss8DWuFKV2jvGKE6r6AMj7n9NMG5xX/v+w5UxVnKtGS5qTgrS2+/t+YqcBPZ14Q/3TJoF3LRSSig==[/sig]
