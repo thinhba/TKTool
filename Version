@@ -1,6 +1,10 @@
-[ver]1.0.7[/ver]
-[date]18.11.2026[/date]
+[ver]1.0.8[/ver]
+[date]19.11.2026[/date]
 [info]
+19.11.2026: v1.0.8
+- Tính năng mới: cập nhật bộ tiêu chuẩn áp siêu cao, kèm điều chỉnh nội suy siêu cao, có Xem 3D để dễ hiểu.
+- Cải tiến: tính năng vét bùn - vét hữu cơ được cập nhật thông minh hơn, cho phép pick thủ công, kèm bổ sung hướng dẫn dễ hiểu.
+- Sửa lỗi: Văng Cad khi tính san nền. Sửa lỗi vạch 2.1 tỉ lệ 1:3
 18.11.2026: v1.0.7
 - Tính năng mới: kiểm toán kết cấu áo đường mềm theo TCCS 38:2022/TCĐBVN và mặt đường BTXM theo TCCS 39:2022/TCĐBVN, xuất thuyết minh ra Excel hoặc PDF; Tạo mặt cắt điển hình 3D của tuyến.
 - Hướng dẫn: thêm hướng dẫn bằng hoạt ảnh cho lập mã diện tích và áp khuôn theo hiện trạng.
@@ -14,6 +18,6 @@
 12.11.2026: thêm tính năng San nền, chỉnh sửa lỗi tính năng tạo file NTD từ bản vẽ trắc dọc - trắc ngang
 08.11.2026: phát hành phiên bản đầu tiên của TKTool, tool đã hỗ trợ đầy đủ các tính năng cần thiết và nâng cao để thiết kế tuyến đường hoàn chỉnh. Thử nghiệm, chưa thu phí
 [/info]
-[url]https://raw.githubusercontent.com/thinhba/TKTool/main/Releases/TkTool_V1.0.7.exe[/url]
-[sha256]74c23c9216352a4ff2d24eb4dcac9db8d52406c03c4eea552187c3ce42c55a81[/sha256]
-[sig]cbD0R/WElgm+NgN12n9kakXXu+HA+uZ+QBF+50OF7F3nhHjhGaP5XO0Q2WoPgYt3DJfoyJxCHhwBrXRy5n1Abg==[/sig]
+[url]https://raw.githubusercontent.com/thinhba/TKTool/main/Releases/TkTool_V1.0.8.exe[/url]
+[sha256]eb4da99c003c96ad4d0e4d2d329d20aa74f066a4f1a52f2eeeac33de7f7d90a4[/sha256]
+[sig]zB5CYvuFm2voKX1i7Se472ZfBbfVJy94pNqKlXN/qtgjrAK0syoyQhU6AGyHh1w+L6AyJ76FrOW1nTg5lISpqw==[/sig]
