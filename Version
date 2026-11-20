@@ -1,6 +1,9 @@
-[ver]1.0.8[/ver]
-[date]19.11.2026[/date]
+[ver]1.0.9[/ver]
+[date]20.11.2026[/date]
 [info]
+20.11.2026: v1.0.9
+- Cập nhật: Tính năng siêu cao giờ cho phép lựa chọn vị trí đạt đỉnh siêu cao. Chỉnh sửa tính năng VHC-VB.
+- Sửa lỗi: Phát sinh cọc bị lỗi trùng tên.
 19.11.2026: v1.0.8
 - Tính năng mới: cập nhật bộ tiêu chuẩn áp siêu cao, kèm điều chỉnh nội suy siêu cao, có Xem 3D để dễ hiểu.
 - Cải tiến: tính năng vét bùn - vét hữu cơ được cập nhật thông minh hơn, cho phép pick thủ công, kèm bổ sung hướng dẫn dễ hiểu.
@@ -18,6 +21,6 @@
 12.11.2026: thêm tính năng San nền, chỉnh sửa lỗi tính năng tạo file NTD từ bản vẽ trắc dọc - trắc ngang
 08.11.2026: phát hành phiên bản đầu tiên của TKTool, tool đã hỗ trợ đầy đủ các tính năng cần thiết và nâng cao để thiết kế tuyến đường hoàn chỉnh. Thử nghiệm, chưa thu phí
 [/info]
-[url]https://raw.githubusercontent.com/thinhba/TKTool/main/Releases/TkTool_V1.0.8.exe[/url]
-[sha256]eb4da99c003c96ad4d0e4d2d329d20aa74f066a4f1a52f2eeeac33de7f7d90a4[/sha256]
-[sig]zB5CYvuFm2voKX1i7Se472ZfBbfVJy94pNqKlXN/qtgjrAK0syoyQhU6AGyHh1w+L6AyJ76FrOW1nTg5lISpqw==[/sig]
+[url]https://raw.githubusercontent.com/thinhba/TKTool/main/Releases/TkTool_V1.0.9.exe[/url]
+[sha256]107ac8787cad203f0cad475a40e22cd8dfa9c4f8c16653b105f2b32936a3931d[/sha256]
+[sig]M68EOdjxwDDCX9hkq2DZb30VUSnevQI82svV7MVDHQ8ITbeSelTkO6PzUVky3nIhtyJ3JOpifxgwJ2AczpONmg==[/sig]
