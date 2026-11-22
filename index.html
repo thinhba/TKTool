@@ -1964,7 +1964,7 @@ function injectLiveCadEffects(svgStr) {
       <polygon class="cursor-arrow" points="0,0 0,15 4.2,11.5 7.5,17 9.8,15.8 6.5,10.2 11.5,10.2" fill="#FFFFFF" stroke="#0F172A" stroke-width="1.1"/>
     </g>
   </svg>`;
-  return svgStr.replace(/\\/<\\/svg>\\s*$/i, cursorAndBeam).replace(/<\/svg>\s*$/i, cursorAndBeam);
+  return svgStr.replace("</svg>", cursorAndBeam);
 }
 
 function selectMainTab(tabIdx, subIdx = 0, manual = false) {
