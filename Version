@@ -1,6 +1,12 @@
-[ver]1.0.9[/ver]
-[date]20.11.2026[/date]
+[ver]1.0.10[/ver]
+[date]22.11.2026[/date]
 [info]
+22.11.2026: v1.0.10
+- Tính năng mới: Thiết kế Vuốt nối hiện trạng. 
+- San nền:  Vẽ lưới trục san nền. Vẽ mặt cắt taluy san nền
+- Thiết kế taluy: Thiết kế taluy giật cấp, tạo rãnh thu.
+- Khảo sát: sửa đường tự nhiên theo Pline, vẽ ao mương
+- Sửa một số lỗi cũ còn tồn đọng.
 20.11.2026: v1.0.9
 - Cập nhật: Tính năng siêu cao giờ cho phép lựa chọn vị trí đạt đỉnh siêu cao. Chỉnh sửa tính năng VHC-VB.
 - Sửa lỗi: Phát sinh cọc bị lỗi trùng tên.
@@ -21,6 +27,6 @@
 12.11.2026: thêm tính năng San nền, chỉnh sửa lỗi tính năng tạo file NTD từ bản vẽ trắc dọc - trắc ngang
 08.11.2026: phát hành phiên bản đầu tiên của TKTool, tool đã hỗ trợ đầy đủ các tính năng cần thiết và nâng cao để thiết kế tuyến đường hoàn chỉnh. Thử nghiệm, chưa thu phí
 [/info]
-[url]https://raw.githubusercontent.com/thinhba/TKTool/main/Releases/TkTool_V1.0.9.exe[/url]
-[sha256]107ac8787cad203f0cad475a40e22cd8dfa9c4f8c16653b105f2b32936a3931d[/sha256]
-[sig]M68EOdjxwDDCX9hkq2DZb30VUSnevQI82svV7MVDHQ8ITbeSelTkO6PzUVky3nIhtyJ3JOpifxgwJ2AczpONmg==[/sig]
+[url]https://raw.githubusercontent.com/thinhba/TKTool/main/Releases/TkTool_V1.0.10.exe[/url]
+[sha256]6aad0e31764fe2e42f22617a011dcedcae74e143beab3a342125ee3f557581e8[/sha256]
+[sig]L4WOu5uZnk0XZ15AjQ7NrAvKGPTQFK5yeWFQfdhanDF6qXITaf9pqHf5f7WVmwfS9Uq/DieUAD7o6HiJuilrjA==[/sig]
