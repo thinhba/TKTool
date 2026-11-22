@@ -103,14 +103,125 @@
     animation-play-state: paused !important;
   }
 
-  /* Respect prefers-reduced-motion */
-  @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
-      animation-duration: 0.001ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.001ms !important;
-      scroll-behavior: auto !important;
-    }
+  /* ================= RICH CAD CHOREOGRAPHY KEYFRAMES ================= */
+  @keyframes cadStrokeDraw {
+    0% { stroke-dashoffset: 650; opacity: 0.25; }
+    12% { opacity: 1; }
+    45%, 88% { stroke-dashoffset: 0; opacity: 1; }
+    100% { stroke-dashoffset: 650; opacity: 0.25; }
+  }
+  @keyframes cadPolyGrow {
+    0%, 10% { opacity: 0.08; transform: scale(0.94); }
+    35%, 88% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0.08; transform: scale(0.94); }
+  }
+  @keyframes cadTileFlip {
+    0%, 8% { opacity: 0; transform: scale(0.75) translateY(8px); }
+    28%, 85% { opacity: 1; transform: scale(1) translateY(0); }
+    100% { opacity: 0; transform: scale(0.75) translateY(8px); }
+  }
+  @keyframes cadOuterClipFade {
+    0%, 35% { opacity: 0.42; }
+    55%, 90% { opacity: 0.03; }
+    100% { opacity: 0.42; }
+  }
+  @keyframes cadSpikeFix {
+    0%, 15% { transform: translateY(0); }
+    30%, 55% { transform: translateY(-10px); }
+    68%, 92% { transform: translateY(14px); }
+    100% { transform: translateY(0); }
+  }
+  @keyframes cadCursorTour {
+    0%   { transform: translate(75px, 65px); }
+    25%  { transform: translate(230px, 85px) scale(0.92); }
+    50%  { transform: translate(345px, 145px); }
+    75%  { transform: translate(195px, 215px) scale(0.92); }
+    100% { transform: translate(75px, 65px); }
+  }
+  @keyframes cadScanBeam {
+    0%   { transform: translateX(-20px); opacity: 0; }
+    15%  { opacity: 0.85; }
+    75%  { transform: translateX(440px); opacity: 0.85; }
+    90%, 100% { transform: translateX(460px); opacity: 0; }
+  }
+  @keyframes cadRowHighlight {
+    0%, 20% { opacity: 0.45; transform: translateX(-3px); }
+    40%, 85% { opacity: 1; transform: translateX(0); }
+    100% { opacity: 0.45; transform: translateX(-3px); }
+  }
+  @keyframes cadGripDragVert {
+    0%, 15% { transform: translateY(6px); }
+    45%, 85% { transform: translateY(-7px); }
+    100% { transform: translateY(6px); }
+  }
+  @keyframes cadExplodeLayerTop {
+    0%, 20%, 90%, 100% { transform: translateY(0); }
+    45%, 70% { transform: translateY(-11px); }
+  }
+  @keyframes cadExplodeLayerBot {
+    0%, 20%, 90%, 100% { transform: translateY(0); }
+    45%, 70% { transform: translateY(11px); }
+  }
+  @keyframes cadScrubBarMove {
+    0%   { transform: translateX(-110px); }
+    50%  { transform: translateX(95px); }
+    100% { transform: translateX(-110px); }
+  }
+  @keyframes cadFlashBorder {
+    0%, 40%, 80%, 100% { stroke-width: 1.5; filter: drop-shadow(0 0 0px rgba(56,189,248,0)); }
+    20%, 60% { stroke-width: 3; filter: drop-shadow(0 0 8px rgba(56,189,248,0.85)); }
+  }
+  @keyframes flowPacketMove {
+    0%   { offset-distance: 0%; opacity: 0; }
+    10%  { opacity: 1; }
+    90%  { opacity: 1; }
+    100% { offset-distance: 100%; opacity: 0; }
+  }
+
+  /* Automatic rich choreography applied inside every .cad-scene SVG */
+  .cad-scene path:not([stroke-dasharray]) {
+    stroke-dasharray: 650;
+    animation: cadStrokeDraw 7.5s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+  }
+  .cad-scene path:nth-of-type(2):not([stroke-dasharray]) { animation-delay: 0.5s; }
+  .cad-scene path:nth-of-type(3):not([stroke-dasharray]) { animation-delay: 1.0s; }
+  .cad-scene path:nth-of-type(4):not([stroke-dasharray]) { animation-delay: 1.5s; }
+  .cad-scene [stroke-dasharray] {
+    animation: dashFlow 1.2s linear infinite !important;
+  }
+  .cad-scene polygon:not(.cursor-arrow) {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: cadPolyGrow 7.5s ease-in-out infinite;
+  }
+  .cad-scene polygon:nth-of-type(2) { animation-delay: 0.4s; }
+  .cad-scene polygon:nth-of-type(3) { animation-delay: 0.8s; }
+  .cad-scene polygon:nth-of-type(4) { animation-delay: 1.2s; }
+  .cad-scene circle {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: nodePulse 2.2s ease-in-out infinite !important;
+  }
+  .cad-scene .tile-flip {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: cadTileFlip 7.5s ease-out infinite;
+  }
+  .cad-scene .tile-flip.t1 { animation-delay: 0.15s; }
+  .cad-scene .tile-flip.t2 { animation-delay: 0.45s; }
+  .cad-scene .tile-flip.t3 { animation-delay: 0.75s; }
+  .cad-scene .tile-flip.t4 { animation-delay: 1.05s; }
+  .cad-scene .tile-flip.t5 { animation-delay: 1.35s; }
+  .cad-scene .anim-outer-tiles {
+    animation: cadOuterClipFade 7.5s ease-in-out infinite;
+  }
+  .cad-scene .sim-cursor {
+    animation: cadCursorTour 8s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+    pointer-events: none;
+  }
+  .cad-scene .scan-beam {
+    animation: cadScanBeam 6.5s ease-in-out infinite;
+    pointer-events: none;
   }
 
   .reveal {
@@ -460,12 +571,19 @@
     width: 100%;
     height: auto;
   }
-  /* Only run mini card animation on hover (or when visible on mobile) */
-  .new-card .new-mini-svg svg * {
-    animation-play-state: paused;
+  /* Continuous vivid animations inside the 6 new feature cards */
+  .new-card .new-mini-svg svg path:not([stroke-dasharray]) {
+    stroke-dasharray: 400;
+    animation: cadStrokeDraw 6s ease-in-out infinite;
   }
-  .new-card:hover .new-mini-svg svg * {
-    animation-play-state: running;
+  .new-card .new-mini-svg svg [stroke-dasharray] {
+    animation: dashFlow 1.2s linear infinite;
+  }
+  .new-card .new-mini-svg svg polygon,
+  .new-card .new-mini-svg svg rect[stroke] {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: cadPolyGrow 6s ease-in-out infinite;
   }
   .new-extra-note {
     margin-top: 22px;
@@ -1420,7 +1538,7 @@
     </div>
 
     <div class="flow-card reveal observe-anim">
-      <svg viewBox="0 0 1160 360" width="100%">
+      <svg viewBox="0 0 1160 360" width="100%" class="cad-scene">
         <!-- Outer 1 File DWG Frame -->
         <rect class="flow-dwg-box" x="14" y="14" width="1132" height="332" rx="14" fill="#252A33" stroke="#38BDF8" stroke-width="2"/>
         <rect x="36" y="3" width="380" height="24" rx="6" fill="#0078D4"/>
@@ -1534,6 +1652,14 @@
           <text x="78" y="48" font-size="10.5" font-weight="700" fill="#E2E8F0" text-anchor="middle">Đọc mặt cắt tuyến chính</text>
           <text x="78" y="68" font-size="10" fill="#F9A8D4" text-anchor="middle">Bảng KL &amp; dòng giảm trừ</text>
         </g>
+
+        <!-- Glowing data packets traveling along the main pipeline & branches -->
+        <circle r="6" fill="#38BDF8" stroke="#FFFFFF" stroke-width="1.5">
+          <animateMotion dur="6s" repeatCount="indefinite" path="M116,105 L305,105 L485,105 L670,105 L870,105 L1060,105"/>
+        </circle>
+        <circle r="5.5" fill="#4CC38A" stroke="#FFFFFF" stroke-width="1.5">
+          <animateMotion dur="5s" repeatCount="indefinite" path="M305,105 L305,255 L480,255 L670,255 L670,105 L870,105 L870,255 L1048,255"/>
+        </circle>
       </svg>
     </div>
   </section>
@@ -1584,7 +1710,7 @@
 
       <!-- Simulated Animated Guide Window (2x2 preview + sidebar) -->
       <div>
-        <svg viewBox="0 0 500 340" width="100%">
+        <svg viewBox="0 0 500 340" width="100%" class="cad-scene">
           <rect width="500" height="340" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
           <rect width="500" height="32" rx="10" fill="#0B1B33"/>
           <text x="16" y="21" font-size="11" font-weight="800" fill="#FFF">Cửa sổ Hướng dẫn TkTool (Không khóa AutoCAD — Vẽ trực tiếp thuật toán)</text>
@@ -1672,7 +1798,7 @@
       </div>
 
       <!-- 3-step visual flow SVG -->
-      <svg viewBox="0 0 1100 110" width="100%" style="background:#1E222A;border-radius:12px;border:1px solid #333B48;">
+      <svg viewBox="0 0 1100 110" width="100%" class="cad-scene" style="background:#1E222A;border-radius:12px;border:1px solid #333B48;">
         <path d="M295,55 L415,55 M685,55 L805,55" stroke="#38BDF8" stroke-width="2.5" stroke-dasharray="6 4" class="flow-line-anim"/>
         <g transform="translate(35,20)">
           <rect width="260" height="70" rx="10" fill="#252A33" stroke="#0078D4" stroke-width="2"/>
@@ -1817,6 +1943,30 @@ function renderSidebar() {
   `).join('');
 }
 
+function injectLiveCadEffects(svgStr) {
+  const cursorAndBeam = `
+    <g class="scan-beam" opacity="0.55">
+      <line x1="20" y1="15" x2="20" y2="265" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <circle cx="20" cy="135" r="3.5" fill="#38BDF8"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="translate"
+        values="70,65; 235,80; 345,140; 185,215; 70,65"
+        keyTimes="0; 0.25; 0.5; 0.75; 1"
+        dur="7.5s" repeatCount="indefinite"/>
+      <line x1="-10" y1="0" x2="10" y2="0" stroke="#38BDF8" stroke-width="1.2" opacity="0.85"/>
+      <line x1="0" y1="-10" x2="0" y2="10" stroke="#38BDF8" stroke-width="1.2" opacity="0.85"/>
+      <rect x="-3.5" y="-3.5" width="7" height="7" fill="none" stroke="#4CC38A" stroke-width="1.4"/>
+      <circle r="10" fill="none" stroke="#38BDF8" stroke-width="1.4">
+        <animate attributeName="r" values="3;14;3" dur="1.8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.9;0;0.9" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <polygon class="cursor-arrow" points="0,0 0,15 4.2,11.5 7.5,17 9.8,15.8 6.5,10.2 11.5,10.2" fill="#FFFFFF" stroke="#0F172A" stroke-width="1.1"/>
+    </g>
+  </svg>`;
+  return svgStr.replace(/\\/<\\/svg>\\s*$/i, cursorAndBeam).replace(/<\/svg>\s*$/i, cursorAndBeam);
+}
+
 function selectMainTab(tabIdx, subIdx = 0, manual = false) {
   currentTabIdx = tabIdx;
   currentSubIdx = subIdx;
@@ -1875,7 +2025,7 @@ function renderExplorerContent(onlySubView = false) {
         <div class="p-diagram-card">
           <div>
             <div class="p-diagram-head">${st.left_title}</div>
-            <div class="p-diagram-svg">${st.svg}</div>
+            <div class="p-diagram-svg">${injectLiveCadEffects(st.svg)}</div>
           </div>
           <div class="p-badges">${badgesHtml}</div>
         </div>
