@@ -1,6 +1,8 @@
-[ver]1.0.10[/ver]
-[date]22.11.2026[/date]
+[ver]1.0.11[/ver]
+[date]23.11.2026[/date]
 [info]
+23.11.2026: v.1.0.11
+- Sửa lỗi: Lỗi tính diện tích VHC khi điểm mia thẳng đứng. Lỗi cập nhật taluy khi dịch đường đỏ.
 22.11.2026: v1.0.10
 - Tính năng mới: Thiết kế Vuốt nối hiện trạng. 
 - San nền:  Vẽ lưới trục san nền. Vẽ mặt cắt taluy san nền
@@ -27,6 +29,6 @@
 12.11.2026: thêm tính năng San nền, chỉnh sửa lỗi tính năng tạo file NTD từ bản vẽ trắc dọc - trắc ngang
 08.11.2026: phát hành phiên bản đầu tiên của TKTool, tool đã hỗ trợ đầy đủ các tính năng cần thiết và nâng cao để thiết kế tuyến đường hoàn chỉnh. Thử nghiệm, chưa thu phí
 [/info]
-[url]https://raw.githubusercontent.com/thinhba/TKTool/main/Releases/TkTool_V1.0.10.exe[/url]
-[sha256]6aad0e31764fe2e42f22617a011dcedcae74e143beab3a342125ee3f557581e8[/sha256]
-[sig]L4WOu5uZnk0XZ15AjQ7NrAvKGPTQFK5yeWFQfdhanDF6qXITaf9pqHf5f7WVmwfS9Uq/DieUAD7o6HiJuilrjA==[/sig]
+[url]https://raw.githubusercontent.com/thinhba/TKTool/main/Releases/TkTool_V1.0.11.exe[/url]
+[sha256]530dccf33ca7115c7812937c849865dc2f8a9ece7b297017ebae66731ffdf036[/sha256]
+[sig]1WAVRxEvrI40rvjX14/9i1WPUMhFpf0W4Rjt66dcR3e6zEvDwDUCcsqWuIuV4AUkNEldOEFj9xJZ/jPVztrpFg==[/sig]
