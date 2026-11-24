@@ -1,7 +1,11 @@
-[ver]1.0.11[/ver]
-[date]23.11.2026[/date]
+[ver]1.0.12[/ver]
+[date]24.11.2026[/date]
 [info]
-23.11.2026: v.1.0.11
+24.11.2026: v1.0.12
+- Tính năng mới: Thay đổi MSS và Bề rộng trắc ngang. Sắp xếp thông minh, tự xuống hàng, dời cột khi trắc ngang đè nhau. Bề rộng trắc ngang theo đường giới hạn. Mở rộng khuôn đường. Cài đặt khuôn đường theo đối tượng.
+- Giao diện: Chạy tool bằng icon. Giao diện Noel.
+- Sửa lỗi một số tính năng.
+23.11.2026: v1.0.11
 - Sửa lỗi: Lỗi tính diện tích VHC khi điểm mia thẳng đứng. Lỗi cập nhật taluy khi dịch đường đỏ.
 22.11.2026: v1.0.10
 - Tính năng mới: Thiết kế Vuốt nối hiện trạng. 
@@ -29,6 +33,6 @@
 12.11.2026: thêm tính năng San nền, chỉnh sửa lỗi tính năng tạo file NTD từ bản vẽ trắc dọc - trắc ngang
 08.11.2026: phát hành phiên bản đầu tiên của TKTool, tool đã hỗ trợ đầy đủ các tính năng cần thiết và nâng cao để thiết kế tuyến đường hoàn chỉnh. Thử nghiệm, chưa thu phí
 [/info]
-[url]https://raw.githubusercontent.com/thinhba/TKTool/main/Releases/TkTool_V1.0.11.exe[/url]
-[sha256]530dccf33ca7115c7812937c849865dc2f8a9ece7b297017ebae66731ffdf036[/sha256]
-[sig]1WAVRxEvrI40rvjX14/9i1WPUMhFpf0W4Rjt66dcR3e6zEvDwDUCcsqWuIuV4AUkNEldOEFj9xJZ/jPVztrpFg==[/sig]
+[url]https://raw.githubusercontent.com/thinhba/TKTool/main/Releases/TkTool_V1.0.12.exe[/url]
+[sha256]bb3cb39d708796106959b1c4b8a6014e92f8bf9a8b7168597451b1f5cf112a8e[/sha256]
+[sig]pkuHfvEAZJbjx0bu/DWOb0bf7eKx8G8Y0qPcfdcWAnL3difpdQqGfysyUmNOyKOxBDinmHTJ3DxFeh3AY5vaoA==[/sig]
