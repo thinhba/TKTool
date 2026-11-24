@@ -1,6 +1,8 @@
-[ver]1.0.13[/ver]
+[ver]1.0.14[/ver]
 [date]24.11.2026[/date]
 [info]
+24.11.2026: v1.0.14
+- Bổ sung thu phong giao diện dành cho các loại màn hình khác nhau
 24.11.2026: v1.0.13
 - Sửa lỗi khởi động bằng icon
 24.11.2026: v1.0.12
@@ -35,6 +37,6 @@
 12.11.2026: thêm tính năng San nền, chỉnh sửa lỗi tính năng tạo file NTD từ bản vẽ trắc dọc - trắc ngang
 08.11.2026: phát hành phiên bản đầu tiên của TKTool, tool đã hỗ trợ đầy đủ các tính năng cần thiết và nâng cao để thiết kế tuyến đường hoàn chỉnh. Thử nghiệm, chưa thu phí
 [/info]
-[url]https://raw.githubusercontent.com/thinhba/TKTool/main/Releases/TkTool_V1.0.13.exe[/url]
-[sha256]60d9f90e03039bcf8fb1aca58a329ad8f7af637f48b1b418977a9b3ad8ca2ba0[/sha256]
-[sig]wEIWzSbZuizqro4NH4mW7NEyuOMu7IU/ojl11MlSfmORLncLmhzZHRMmPRjjdMHIkMsd/saWfQKDxaTl9hKXsA==[/sig]
+[url]https://raw.githubusercontent.com/thinhba/TKTool/main/Releases/TkTool_V1.0.14.exe[/url]
+[sha256]6da989da7f42003bf2f11301fa8cd62526efb8270e2c2f23de65f58d33edc387[/sha256]
+[sig]UT7q8dBm4JTeo58NkHoPWxiFVvTnm4a+s3wnDCqKyqKjIYkAcKCfsPwgcIgFgppxasTW/QfgkCDIRNSqgan2fQ==[/sig]
