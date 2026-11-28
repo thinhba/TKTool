@@ -1,6 +1,10 @@
-[ver]1.0.14[/ver]
-[date]24.11.2026[/date]
+[ver]1.0.15[/ver]
+[date]28.11.2026[/date]
 [info]
+28.11.2026: v1.0.15
+- Tính năng mới: Ghép khung in, xuất danh mục PDF tự động và Mô phỏng tuyến 3D
+- Cập nhật: Tạo mái taluy vét hữu cơ, vét bùn. Mở rộng khuôn. Bổ sung nhận diện các phiên bản Civil 3D. Bổ sung mã địa vật vào file NTD. Bổ sung thêm tùy chọn nội suy điểm mia. 
+- Sửa lỗi: Lỗi thể hiện diện tích.
 24.11.2026: v1.0.14
 - Bổ sung thu phong giao diện dành cho các loại màn hình khác nhau
 24.11.2026: v1.0.13
@@ -37,6 +41,6 @@
 12.11.2026: thêm tính năng San nền, chỉnh sửa lỗi tính năng tạo file NTD từ bản vẽ trắc dọc - trắc ngang
 08.11.2026: phát hành phiên bản đầu tiên của TKTool, tool đã hỗ trợ đầy đủ các tính năng cần thiết và nâng cao để thiết kế tuyến đường hoàn chỉnh. Thử nghiệm, chưa thu phí
 [/info]
-[url]https://raw.githubusercontent.com/thinhba/TKTool/main/Releases/TkTool_V1.0.14.exe[/url]
-[sha256]6da989da7f42003bf2f11301fa8cd62526efb8270e2c2f23de65f58d33edc387[/sha256]
-[sig]UT7q8dBm4JTeo58NkHoPWxiFVvTnm4a+s3wnDCqKyqKjIYkAcKCfsPwgcIgFgppxasTW/QfgkCDIRNSqgan2fQ==[/sig]
+[url]https://raw.githubusercontent.com/thinhba/TKTool/main/Releases/TkTool_V1.0.15.exe[/url]
+[sha256]ab9b97030934301afbf507d12dcfef5e8bf94d038ee917503c82e39bdf884ebd[/sha256]
+[sig]7iTd6iXljVFwZuC3Gq4ChOaqEy+f5N8EMwBRNsFG8izx5VLpasi+nHVa+wv04siLmwtqG2+SzAqc/CSPvavPPw==[/sig]
